@@ -1,0 +1,52 @@
+{
+  "engine": "gemini-3.5-flash-lite",
+  "raw": {
+    "vendor_name": "Apex Industrial Lubricants Pvt Ltd",
+    "vendor_gstin": "27AAECA3390B1Z1",
+    "buyer_name": "Northwind Retail Pvt Ltd",
+    "buyer_gstin": "27AACCN4821K1ZD",
+    "invoice_number": "AIL/2526/0466",
+    "invoice_date": "13-11-2026",
+    "po_reference": "PO-1008",
+    "line_items": [
+      {
+        "description": "Hydraulic oil ISO VG 68 (210 L drum)",
+        "hsn": "2710",
+        "quantity": "4",
+        "unit": "Drum",
+        "unit_price": "30,210.00",
+        "amount": "1,20,840.00"
+      },
+      {
+        "description": "Lithium grease EP2 (18 kg bucket)",
+        "hsn": "2710",
+        "quantity": "10",
+        "unit": "Bkt",
+        "unit_price": "3,200.00",
+        "amount": "32,000.00"
+      }
+    ],
+    "subtotal": "1,52,840.00",
+    "cgst_rate": null,
+    "cgst_amount": null,
+    "sgst_rate": null,
+    "sgst_amount": null,
+    "igst_rate": "18%",
+    "igst_amount": "27,511.20",
+    "total": "1,80,351.20",
+    "currency": "INR",
+    "confidence": {
+      "vendor_name": 1.0,
+      "vendor_gstin": 1.0,
+      "invoice_number": 1.0,
+      "invoice_date": 1.0,
+      "po_reference": 1.0,
+      "line_items": 1.0,
+      "total": 1.0,
+      "tax": 1.0
+    },
+    "notes": null
+  },
+  "file": "08_e4_price_creep_wrong_gst.pdf",
+  "created_at": "2026-11-17T21:19:56"
+}
