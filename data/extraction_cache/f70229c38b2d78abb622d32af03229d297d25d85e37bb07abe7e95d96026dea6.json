@@ -1,0 +1,52 @@
+{
+  "engine": "gemini-3.5-flash",
+  "raw": {
+    "vendor_name": "Kaveri Office Supplies Pvt Ltd",
+    "vendor_gstin": "29AADCK8812H1ZB",
+    "buyer_name": "Northwind Retail Pvt Ltd",
+    "buyer_gstin": "27AACCN4821K1ZD",
+    "invoice_number": "KOS/2526/0894",
+    "invoice_date": "11 Nov 2026",
+    "po_reference": "PO-1004",
+    "line_items": [
+      {
+        "description": "A4 copier paper 75 GSM (ream)",
+        "hsn": "4802",
+        "quantity": "200",
+        "unit": "Ream",
+        "unit_price": "245.00",
+        "amount": "49,000.00"
+      },
+      {
+        "description": "Box file, laminated",
+        "hsn": "4820",
+        "quantity": "100",
+        "unit": "Nos",
+        "unit_price": "85.00",
+        "amount": "8,500.00"
+      }
+    ],
+    "subtotal": "57,500.00",
+    "cgst_rate": null,
+    "cgst_amount": null,
+    "sgst_rate": null,
+    "sgst_amount": null,
+    "igst_rate": "18%",
+    "igst_amount": "10,350.00",
+    "total": "67,850.00",
+    "currency": "INR",
+    "confidence": {
+      "vendor_name": 1.0,
+      "vendor_gstin": 1.0,
+      "invoice_number": 1.0,
+      "invoice_date": 1.0,
+      "po_reference": 1.0,
+      "line_items": 1.0,
+      "total": 1.0,
+      "tax": 1.0
+    },
+    "notes": null
+  },
+  "file": "06_e3_reissued_duplicate.pdf",
+  "created_at": "2026-11-17T16:45:42"
+}

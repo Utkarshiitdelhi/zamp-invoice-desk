@@ -1,0 +1,142 @@
+[
+  {
+    "file": "01_happy_sharma_steel.pdf",
+    "title": "Happy path: clean steel invoice",
+    "story": "Digital PDF, explicit PO-1001, goods fully received on GRN-5001. Every check passes.",
+    "vendor": "Sharma Steel Industries Pvt Ltd",
+    "expected": "Approve",
+    "expected_codes": [],
+    "total": 321432.0,
+    "kind": "digital"
+  },
+  {
+    "file": "02_e1_split_1_of_3.pdf",
+    "title": "E1 · Split invoice 1 of 3 (60 bundles)",
+    "story": "PO-1003 is for 100 bundles, all received. First partial bill of 60.",
+    "vendor": "Deccan Packaging Solutions LLP",
+    "expected": "Approve",
+    "expected_codes": [],
+    "total": 91350.0,
+    "kind": "digital"
+  },
+  {
+    "file": "03_e1_split_2_of_3.pdf",
+    "title": "E1 · Split invoice 2 of 3 (40 bundles)",
+    "story": "Second partial bill of 40. Together with the first, the PO is now fully billed.",
+    "vendor": "Deccan Packaging Solutions LLP",
+    "expected": "Approve",
+    "expected_codes": [],
+    "total": 60900.0,
+    "kind": "digital"
+  },
+  {
+    "file": "04_e1_split_3_of_3.pdf",
+    "title": "E1 · Split invoice 3 of 3 (15 more bundles)",
+    "story": "On its own this invoice looks fine. Against the ledger, the PO has nothing left to bill.",
+    "vendor": "Deccan Packaging Solutions LLP",
+    "expected": "Hold",
+    "expected_codes": [
+      "OVER_PO_BALANCE",
+      "QTY_NOT_RECEIVED"
+    ],
+    "total": 22837.5,
+    "kind": "digital"
+  },
+  {
+    "file": "05_e2_handwritten_no_po.pdf",
+    "title": "E2 · Handwritten bill, badly scanned, no PO",
+    "story": "A local electrical shop's bill-book page, photographed skewed and low-contrast. No PO number. Needs vision extraction, an arithmetic cross-check, and PO inference.",
+    "vendor": "Shree Ganesh Electricals",
+    "expected": "Hold",
+    "expected_codes": [
+      "PO_INFERRED"
+    ],
+    "total": 35931.0,
+    "kind": "handwritten scan"
+  },
+  {
+    "file": "06_e3_reissued_duplicate.pdf",
+    "title": "E3 · Re-issued duplicate",
+    "story": "Same vendor, items and amount as KOS/2526/0871 (approved 7 Nov), new number, dated 5 days later. The PO still has room and goods were received, so only the duplicate check can catch it.",
+    "vendor": "Kaveri Office Supplies Pvt Ltd",
+    "expected": "Hold",
+    "expected_codes": [
+      "DUPLICATE_SUSPECTED"
+    ],
+    "total": 67850.0,
+    "kind": "digital"
+  },
+  {
+    "file": "07_e3_original_resent.pdf",
+    "title": "E3 bonus · The original, emailed again",
+    "story": "The exact file that was already approved on 7 Nov. Same hash, same number.",
+    "vendor": "Kaveri Office Supplies Pvt Ltd",
+    "expected": "Reject",
+    "expected_codes": [
+      "DUPLICATE_EXACT"
+    ],
+    "total": 67850.0,
+    "kind": "digital"
+  },
+  {
+    "file": "08_e4_price_creep_wrong_gst.pdf",
+    "title": "E4 · Price creep + wrong GST type",
+    "story": "Hydraulic oil billed 6% above PO-1008, and IGST charged although vendor and buyer are both in Maharashtra. Two unrelated problems, one vendor email.",
+    "vendor": "Apex Industrial Lubricants Pvt Ltd",
+    "expected": "Reject",
+    "expected_codes": [
+      "TAX_TYPE_ERROR",
+      "PRICE_VARIANCE_HIGH"
+    ],
+    "total": 180351.2,
+    "kind": "digital"
+  },
+  {
+    "file": "09_backup_billed_before_received.pdf",
+    "title": "Backup · Billed before goods arrived (scanned)",
+    "story": "Scanned invoice for 500 kg; the warehouse has received only 300 kg (GRN-5007).",
+    "vendor": "Gujarat Polymers Ltd",
+    "expected": "Hold",
+    "expected_codes": [
+      "QTY_NOT_RECEIVED"
+    ],
+    "total": 69620.0,
+    "kind": "scan"
+  },
+  {
+    "file": "10_backup_gstin_mismatch.pdf",
+    "title": "Backup · GSTIN mismatch (fraud signal)",
+    "story": "Looks like Sharma Steel, but the GSTIN printed on the invoice is not the one on file.",
+    "vendor": "Sharma Steel Industries Pvt Ltd",
+    "expected": "Hold",
+    "expected_codes": [
+      "GSTIN_MISMATCH"
+    ],
+    "total": 82600.0,
+    "kind": "digital"
+  },
+  {
+    "file": "11_backup_price_within_tolerance.pdf",
+    "title": "Backup · Price variance within tolerance",
+    "story": "Unit price ₹548 vs ₹540 on the PO (+1.48%, ₹400 on the line). Inside the ±2% / ₹500 band.",
+    "vendor": "Gujarat Polymers Ltd",
+    "expected": "Approve",
+    "expected_codes": [
+      "PRICE_VARIANCE_OK"
+    ],
+    "total": 32332.0,
+    "kind": "digital"
+  },
+  {
+    "file": "12_backup_missing_invoice_number.pdf",
+    "title": "Backup · Missing invoice number",
+    "story": "No invoice number printed. Under GST that's not a valid tax invoice; only the vendor can fix it.",
+    "vendor": "Deccan Packaging Solutions LLP",
+    "expected": "Reject",
+    "expected_codes": [
+      "MISSING_REQUIRED_FIELD"
+    ],
+    "total": 41772.0,
+    "kind": "digital"
+  }
+]

@@ -1,0 +1,3 @@
+vendor_id,invoice_number,invoice_date,po_number,subtotal,total,lines,sample_file,processed_at
+V004,KOS/2526/0871,2026-11-06,PO-1004,57500.0,67850.0,"[{""line_no"": 1, ""qty"": 200, ""amount"": 49000.0}, {""line_no"": 2, ""qty"": 100, ""amount"": 8500.0}]",07_e3_original_resent.pdf,2026-11-07 11:42
+V005,AIL/2526/0198,2026-08-21,PO-0998,49600.0,58528.0,"[{""line_no"": 1, ""qty"": 8, ""amount"": 49600.0}]",,2026-08-25 15:10

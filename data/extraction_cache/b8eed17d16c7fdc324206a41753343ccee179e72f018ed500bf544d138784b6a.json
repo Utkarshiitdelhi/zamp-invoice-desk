@@ -1,0 +1,44 @@
+{
+  "engine": "gemini-3.5-flash",
+  "raw": {
+    "vendor_name": "Deccan Packaging Solutions LLP",
+    "vendor_gstin": "27AAJFD7364Q1ZM",
+    "buyer_name": "Northwind Retail Pvt Ltd",
+    "buyer_gstin": "27AACCN4821K1ZD",
+    "invoice_number": "DPS/1125/131",
+    "invoice_date": "10-11-2026",
+    "po_reference": "PO-1003",
+    "line_items": [
+      {
+        "description": "Corrugated shipper carton 5-ply (bundle of 25)",
+        "hsn": "4819",
+        "quantity": "40",
+        "unit": "Bdl",
+        "unit_price": "1,450.00",
+        "amount": "58,000.00"
+      }
+    ],
+    "subtotal": "58,000.00",
+    "cgst_rate": "2.5%",
+    "cgst_amount": "1,450.00",
+    "sgst_rate": "2.5%",
+    "sgst_amount": "1,450.00",
+    "igst_rate": null,
+    "igst_amount": null,
+    "total": "60,900.00",
+    "currency": "INR",
+    "confidence": {
+      "vendor_name": 0.99,
+      "vendor_gstin": 0.99,
+      "invoice_number": 0.99,
+      "invoice_date": 0.99,
+      "po_reference": 0.99,
+      "line_items": 0.99,
+      "total": 0.99,
+      "tax": 0.99
+    },
+    "notes": null
+  },
+  "file": "03_e1_split_2_of_3.pdf",
+  "created_at": "2026-11-17T16:44:20"
+}

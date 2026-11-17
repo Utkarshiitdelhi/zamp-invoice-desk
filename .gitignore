@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+data/ap.sqlite3
+data/uploads/
+.streamlit/secrets.toml
+.pytest_cache/
+.DS_Store

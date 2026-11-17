@@ -1,0 +1,18 @@
+po_number,vendor_id,po_date,status,requester,line_no,item,hsn,qty,unit,unit_price,gst_rate
+PO-1001,V001,2026-10-20,open,Ravi Kulkarni (Projects),1,MS Angle 50x50x5 mm,7216,2400,Kg,68.5,18
+PO-1001,V001,2026-10-20,open,Ravi Kulkarni (Projects),2,MS Plate 6 mm,7208,1500,Kg,72.0,18
+PO-1002,V001,2026-10-28,open,Ravi Kulkarni (Projects),1,MS Round Bar 20 mm,7214,1000,Kg,70.0,18
+PO-1003,V002,2026-10-15,open,Neha Joshi (Warehouse),1,Corrugated shipper carton 5-ply (bundle of 25),4819,100,Bdl,1450.0,5
+PO-1004,V004,2026-10-25,open,Anita Desai (Admin),1,A4 copier paper 75 GSM (ream),4802,400,Ream,245.0,18
+PO-1004,V004,2026-10-25,open,Anita Desai (Admin),2,"Box file, laminated",4820,200,Nos,85.0,18
+PO-1005,V003,2026-11-02,open,Sunil Pawar (Facilities),1,MCB 32A double pole,8536,20,Nos,640.0,18
+PO-1005,V003,2026-11-02,open,Sunil Pawar (Facilities),2,PVC conduit pipe 25 mm (3 m),3917,50,Nos,95.0,18
+PO-1005,V003,2026-11-02,open,Sunil Pawar (Facilities),3,Copper wire 2.5 sqmm (90 m coil),8544,6,Coil,2150.0,18
+PO-1010,V003,2026-11-05,open,Sunil Pawar (Facilities),1,LED batten 20W,9405,40,Nos,310.0,18
+PO-1010,V003,2026-11-05,open,Sunil Pawar (Facilities),2,Ceiling fan 1200 mm,8414,10,Nos,2350.0,18
+PO-1006,V006,2026-10-30,open,Neha Joshi (Warehouse),1,"HDPE granules, injection grade",3901,500,Kg,118.0,18
+PO-1007,V006,2026-10-30,open,Neha Joshi (Warehouse),1,LDPE stretch film 23 micron (roll),3920,200,Roll,540.0,18
+PO-1008,V005,2026-10-22,open,Ravi Kulkarni (Projects),1,Hydraulic oil ISO VG 68 (210 L drum),2710,4,Drum,28500.0,18
+PO-1008,V005,2026-10-22,open,Ravi Kulkarni (Projects),2,Lithium grease EP2 (18 kg bucket),2710,10,Bkt,3200.0,18
+PO-1009,V002,2026-11-01,open,Neha Joshi (Warehouse),1,Bubble wrap roll 1 m x 100 m,3921,30,Roll,1180.0,18
+PO-0998,V005,2026-08-11,closed,Ravi Kulkarni (Projects),1,"Cutting oil, soluble (50 L can)",3403,8,Can,6200.0,18

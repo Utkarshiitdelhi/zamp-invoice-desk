@@ -1,0 +1,8 @@
+vendor_id,legal_name,gstin,state,state_code,city,status,email,address
+V001,Sharma Steel Industries Pvt Ltd,27AAGCS5521M1Z1,Maharashtra,27,Nashik,active,accounts@sharmasteel.example.in,"Gat No. 112, Ambad MIDC, Nashik 422010"
+V002,Deccan Packaging Solutions LLP,27AAJFD7364Q1ZM,Maharashtra,27,Pune,active,billing@deccanpack.example.in,"S. No. 41, Chakan Industrial Area, Pune 410501"
+V003,Shree Ganesh Electricals,27ABZPG4417L1Z2,Maharashtra,27,Pune,active,shreeganesh.elec@example.in,"Shop No. 7, Laxmi Road, Pune 411002"
+V004,Kaveri Office Supplies Pvt Ltd,29AADCK8812H1ZB,Karnataka,29,Bengaluru,active,ar@kaverioffice.example.in,"No. 18, 2nd Cross, Peenya Industrial Area, Bengaluru 560058"
+V005,Apex Industrial Lubricants Pvt Ltd,27AAECA3390B1Z1,Maharashtra,27,Thane,active,finance@apexlubes.example.in,"Unit 9, Wagle Estate, Thane 400604"
+V006,Gujarat Polymers Ltd,24AABCG6675R1ZX,Gujarat,24,Ahmedabad,active,receivables@gujpoly.example.in,"Plot 220, Vatva GIDC, Ahmedabad 382445"
+V007,Rapid Freight Carriers,07AAKFR2209N1ZX,Delhi,07,New Delhi,blocked,ops@rapidfreight.example.in,"Transport Nagar, New Delhi 110033"
