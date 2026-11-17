@@ -1,0 +1,52 @@
+{
+  "engine": "gemini-3.5-flash-lite",
+  "raw": {
+    "vendor_name": "Sharma Steel Industries Pvt Ltd",
+    "vendor_gstin": "27AAGCS5521M1Z1",
+    "buyer_name": "Northwind Retail Pvt Ltd",
+    "buyer_gstin": "27AACCN4821K1ZD",
+    "invoice_number": "SSI/25-26/0412",
+    "invoice_date": "14-11-2026",
+    "po_reference": "PO-1001",
+    "line_items": [
+      {
+        "description": "MS Angle 50x50x5 mm",
+        "hsn": "7216",
+        "quantity": "2,400",
+        "unit": "Kg",
+        "unit_price": "68.50",
+        "amount": "1,64,400.00"
+      },
+      {
+        "description": "MS Plate 6 mm",
+        "hsn": "7208",
+        "quantity": "1,500",
+        "unit": "Kg",
+        "unit_price": "72.00",
+        "amount": "1,08,000.00"
+      }
+    ],
+    "subtotal": "2,72,400.00",
+    "cgst_rate": "9%",
+    "cgst_amount": "24,516.00",
+    "sgst_rate": "9%",
+    "sgst_amount": "24,516.00",
+    "igst_rate": null,
+    "igst_amount": null,
+    "total": "3,21,432.00",
+    "currency": "₹",
+    "confidence": {
+      "vendor_name": 1.0,
+      "vendor_gstin": 1.0,
+      "invoice_number": 1.0,
+      "invoice_date": 1.0,
+      "po_reference": 1.0,
+      "line_items": 1.0,
+      "total": 1.0,
+      "tax": 1.0
+    },
+    "notes": null
+  },
+  "file": "01_happy_sharma_steel.pdf",
+  "created_at": "2026-11-17T21:05:09"
+}
